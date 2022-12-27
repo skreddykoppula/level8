@@ -41,15 +41,17 @@
     </form>
 
     <div class="mt-2">
-      <h5>Overdue <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items">
+      <h5>Overdue <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items"
+           id="count-overdue">
+           2 
+    </span></h5>
+      <%- include('todos.ejs') %>
+      <h5>Due Today <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items"
+      id=" count-due-today">      
             2 
     </span></h5>
       <%- include('todos.ejs') %>
-      <h5>Due Today <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items">
-            2 
-    </span></h5>
-      <%- include('todos.ejs') %>
-      <h5>Due Later <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items">
+      <h5>Due Later <span class="bg-gray-100 text-gray-800 text-sm font-small mr-2 px-2.5 py-0.5 rounded dark:bg-grey-200 dark:text-grey-900 justify-center items-center items" id="count-due-later">
             2
     </span></h5>
       <%- include('todos.ejs') %>
